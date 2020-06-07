@@ -1,13 +1,23 @@
-<text>抱歉!此页面暂时没有得到完整的开发,作者努力开发ing...</text>
-<button id='乱码生成器'>前往==>>「乱码生成工具」</button>
-<button id='字符串重复'>前往==>>「文本重复工具」</button>
-<button id='进制2t10'>前往==>>「2-10进制转换器」</button>
-<button id='返回'>返回==>>主页1</button>
+<html>
+
+<head>
+    <link href='./tools/dist/dialog.css' rel='stylesheet'>
+</head>
+<script src='./tools/dist/mDialogMin.js'></script>
+
+<body>
+    <text id='lls'>抱歉!此页面暂时没有得到完整的开发,作者努力开发ing...</text>
+    <button id='乱码生成器'>前往==>>「乱码生成工具」</button>
+    <button id='字符串重复'>前往==>>「文本重复工具」</button>
+    <button id='进制2t10'>前往==>>「2-10进制转换器」</button>
+    <button id='返回'>返回==>>主页1</button>
+</body>
 <script language="javascript">
     var 乱码生成器 = document.getElementById('乱码生成器')
     var 主页1 = document.getElementById('返回')
     var 字符串重复 = document.getElementById('字符串重复')
     var 进制2t10 = document.getElementById('进制2t10')
+    var lls = document.getElementById('lls')
     进制2t10.onclick = function() {
         location.assign('./otherplay/jzzh.html')
     }
@@ -20,4 +30,15 @@
     主页1.onclick = function() {
         location.assign('./../orgameall.html')
     }
+    lls.onclick = function() {
+        Dialog.init("Wow!你发现了一个不错的彩蛋", {
+            button: {
+                关闭: function() {
+                    Dialog.close()
+                }
+            }
+        })
+    }
 </script>
+
+</html>
