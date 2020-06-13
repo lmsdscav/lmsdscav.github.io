@@ -43,7 +43,7 @@
             <script language="JavaScript">
                 var sd = document.getElementById("test")
                 sd.onclick = function() {
-                    Dialog.init('测试成功', 1000)
+                    Dialog.init('测试成功<div></div><button style="font-size:16.0pt;font-family:华文仿宋;size:60" OnClick="Dialog.close()" >好吧<button>')
                 }
             </script>
             <img id='imgclick' class="btn btn-primary rippler rippler-default" src="timg.gif"></img>
@@ -164,29 +164,29 @@
     }
 </style>
 <script language='javascript'>
-    Dialog.init('网站有比较大的改变,不算太大,但是可以让你们满足了,下次我再去掉这个该死的弹窗', {
-        maskClick: false,
-        button: {
-            查看提示: function() {
-                Dialog.init('下次我再去掉这个该死的弹窗!!!!!', {
-                    maskClick: false,
-                    mask: 0,
-                    button: {
-                        OK: function() {
-                            Dialog.close(this)
-                        }
-                    }
-                })
-            },
-            关闭: function() {
-                Dialog.init("关闭中...", {
-                    time: 100,
-                    maskClick: false,
-                    after: function() {
-                        Dialog.close()
-                    }
-                })
-            }
-        }
-    })
+    // Dialog.init('网站有比较大的改变,不算太大,但是可以让你们满足了,下次我再去掉这个该死的弹窗', {
+    //     maskClick: false,
+    //     button: {
+    //         查看提示: function() {
+    //             Dialog.init('下次我再去掉这个该死的弹窗!!!!!', {
+    //                 maskClick: false,
+    //                 mask: 0,
+    //                 button: {
+    //                     OK: function() {
+    //                         Dialog.close(this)
+    //                     }
+    //                 }
+    //             })
+    //         },
+    //         关闭: function() {
+    //             Dialog.init("关闭中...", {
+    //                 time: 100,
+    //                 maskClick: false,
+    //                 after: function() {
+    //                     Dialog.close()
+    //                 }
+    //             })
+    //         }
+    //     }
+    // })
 </script>
