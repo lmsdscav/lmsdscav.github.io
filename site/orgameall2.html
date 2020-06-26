@@ -90,17 +90,10 @@
     }
     主页1.onclick = function() {
         //location.assign('./../orgameall.html')
-        Dialog.init("你真的要返回嘛???", {
-            button: {
-                再看看主页2: function() {
-                    Dialog.close()
-                },
-                离开主页2前往主页1: function() {
-                    location.assign('./../orgameall.html')
-                }
-            }
-        })
+
+        location.assign('./../orgameall.html')
     }
+
     lls.onclick = function() {
         Dialog.init("Wow!你发现了一个不错的彩蛋", {
             button: {
